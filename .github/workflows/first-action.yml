@@ -1,0 +1,14 @@
+#Action Name
+name: First Workflow
+#Workflow Trigger Condition: manually
+on: workflow_dispatch
+#Jobs
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Greeting
+        run: echo "Hello World!"
+      - name: Print GoodBye
+        run: echo "GoodBye!!!"
+  
